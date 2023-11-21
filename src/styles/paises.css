@@ -1,0 +1,206 @@
+body,
+html {
+  color: #283747 !important;
+  font-family: Roboto;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+.App {
+  margin: 25px auto;
+  min-height: calc(100vh - 50px);
+  padding: 30px;
+  width: 75%;
+}
+
+/* header */
+.pais-header {
+  background: #f0f0f0;
+  padding: 1.5rem;
+  text-align: center;
+}
+.pais-header h2 {
+  color: orange;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  margin: 0.5rem auto;
+}
+.subtitulo {
+  color: #555;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+/* ---------  */
+/* controles */
+.controles {
+  text-align: center;
+  width: 100%;
+}
+
+.busqueda-input {
+  background: #faf6f6;
+  border: 0.2rem solid #f8e7e7;
+  border-radius: 3rem;
+  color: orange;
+  font-size: 2rem;
+  height: 5rem;
+  margin: 3rem auto;
+  outline: none;
+  text-indent: 2rem;
+  width: 50%;
+}
+.flecha-link {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: green;
+  z-index: 999;
+  font-size: 24px;
+  transition: color 0.3s;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.flecha-link:hover {
+  color: rgb(107, 238, 107);
+}
+.fa-chart-bar {
+  color: orange;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+/*  paises */
+
+.paises-wrapper {
+  background: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 1rem 0 3rem;
+  padding: 1rem;
+}
+.pais {
+  background: #fff;
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  max-width: 25rem;
+  min-width: 25rem;
+  padding: 2rem;
+  text-align: center;
+}
+.pais_bandera {
+  height: 12rem;
+  margin: auto;
+  text-align: center;
+  width: 20rem;
+}
+.pais_bandera img {
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem 0.2rem #f1e1e1;
+  display: block;
+  margin: auto;
+  max-height: 75%;
+  max-width: 75%;
+  min-height: 75%;
+  min-width: 75%;
+}
+
+.pais_nombre {
+  color: orange;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  letter-spacing: 0.075rem;
+  margin-bottom: 1rem;
+}
+
+.pais p {
+  color: #747474;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding: 0.2rem;
+  text-align: left;
+}
+
+.pais span {
+  font-weight: 600;
+}
+
+/* grafico de barras */
+
+.graficoWrapper {
+  margin: 0.5rem auto;
+  min-height: 60vh;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.grafico-wrapper a {
+  text-decoration: none;
+  border-bottom: none;
+}
+.grafico-wrapper .fas {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-decoration: none;
+}
+.grafico-botones {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.grafico-botones button {
+  background: orange;
+  border: none;
+  border-radius: 0.2rem;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 400;
+  height: 3rem;
+  letter-spacing: 0.075rem;
+  margin: auto 0.5rem;
+  outline: none;
+  text-transform: uppercase;
+  width: 12rem;
+}
+.grafico-title {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.graficos {
+  background: #f0f0f0;
+  padding: 1rem;
+  position: relative;
+}
+.graficoWrapper {
+  margin: 0.5rem auto;
+  min-height: 60vh;
+  padding: 0.5rem;
+  position: relative;
+  width: 100%;
+}
+.barras {
+  grid-gap: 0.5rem 0.5rem;
+  align-items: center;
+  color: #333;
+  display: grid;
+  font-size: 1.35rem;
+  font-weight: 600;
+  grid-template-columns: 10% 50% 15%;
+  justify-content: center;
+  letter-spacing: 0.075rem;
+  margin: 0.5rem;
+}
+.barras .barra {
+  background: orange;
+  border: 0.1rem solid orange;
+  border-radius: 0.2rem;
+}
